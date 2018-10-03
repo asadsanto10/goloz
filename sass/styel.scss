@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+
+/*navbar area start*/
+.uk-active{
+  background-color: mediumvioletred !important;
+}
+  .navbar{
+    background: #000;
+    .nav-item{
+      padding-left: 1em !important;
+      .nav-link{
+        text-transform: uppercase;
+      }
+    }
+  }
+/*navbar area end*/
+
+/*carousel area start*/
+.carousel-item{
+  height: 450px;
+}
+.carousel-img-1{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+}
+.carousel-img-2{
+  background: url('../img/image2.jpeg');
+  background-size: cover;
+}
+.carousel-img-3{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+}
+
+/*carosul area end*/
+
+#homeicon{
+  i{
+    font-size: 50px;
+  }
+}
+
+#homestar{
+  background: url(../img/bg1.jpeg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    }
+  }
+
+#homevideo{
+  background: url(../img/people.jpeg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  a{
+    i{
+      font-size: 50px;
+    }
+  }
+  &::before{
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+#photogal{
+  img{
+    min-height: 250px;
+  }
+}
+
+/*========================Responsive===================*/
+@media only screen and (max-width: 767px){
+  .navbar{
+    .nav-item{
+      padding-left: 0em !important;
+    }
+  }
+}
+
+/*carosul area start*/
+@media only screen and (max-width: 420px){
+    #carosul{
+      h2{
+        font-size: 2.5rem;
+      }
+    }
+}
+/*carosul area end*/
